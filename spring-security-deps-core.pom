@@ -1,16 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
-	<groupId>com.anthavio.maven</groupId>
+	<groupId>net.anthavio.maven</groupId>
 	<artifactId>spring-security-deps-core</artifactId>
-	<version>3.1.3.RELEASE</version>
+	<version>3.1.5.RELEASE</version>
 	<packaging>pom</packaging>
 	
 	<dependencyManagement>
 	
 		<dependencies>
 			<dependency>
-				<groupId>com.anthavio.maven</groupId>
+				<groupId>net.anthavio.maven</groupId>
 				<artifactId>spring-security-bom</artifactId>
 				<version>${project.version}</version>
 				<type>pom</type>

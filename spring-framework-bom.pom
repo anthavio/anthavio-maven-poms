@@ -2,10 +2,48 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
-	<groupId>com.anthavio.maven</groupId>
+	<groupId>net.anthavio.maven</groupId>
 	<artifactId>spring-framework-bom</artifactId>
-	<version>3.2.1.RELEASE</version>
+	<version>3.2.5.RELEASE</version>
 	<packaging>pom</packaging>
+	
+	<name>spring-framework-bom</name>
+	<description>Spring Framework Maven BOM</description>
+	
+	<!-- 
+		Starting with Spring 4.0.0, official BOM is FINALY provided
+		http://docs.spring.io/spring/docs/4.0.0.RELEASE/spring-framework-reference/htmlsingle/#overview-maven-bom
+		But using it, still have to exclude commons-logging, if you want to use slf4j
+		http://docs.spring.io/spring/docs/4.0.0.RELEASE/spring-framework-reference/htmlsingle/#overview-not-using-commons-logging
+	 -->
+	
+	<url>https://github.com/anthavio/anthavio-maven-poms</url>
+	<scm>
+		<connection>scm:git:git://github.com/anthavio/anthavio-maven-poms.git</connection>
+		<developerConnection>scm:git:git@github.com:anthavio/anthavio-maven-poms.git</developerConnection>
+		<url>https://github.com/anthavio/anthavio-maven-poms</url>
+	</scm>
+	
+	<licenses>
+		<license>
+			<name>GNU Lesser General Public License v3.0</name>
+			<url>http://www.gnu.org/licenses/lgpl-3.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	
+	<developers>
+		<developer>
+			<id>anthavio</id>
+			<name>Martin Vaněk</name>
+			<email>anthavio@post.cz</email>
+		</developer>
+		<developer>
+			<id>vanek</id>
+			<name>Martin Vaněk</name>
+			<email>anthavio@post.cz</email>
+		</developer>
+	</developers>
 	
 	<dependencyManagement>
 	<dependencies>
@@ -28,7 +66,10 @@
 			</exclusions>
 		</dependency>
 		
-		<!-- asm and cglib inlined into spring-core in 3.2 -->
+		<!-- 
+			Since Spring 3.2 M2,  asm and cglib are inlined into spring-core
+			http://spring.io/blog/2012/09/12/spring-framework-3-2-m2-released
+		-->
 		<!--
 		<dependency>
 			<groupId>org.springframework</groupId>
