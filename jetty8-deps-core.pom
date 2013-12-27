@@ -3,9 +3,34 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>net.anthavio.maven</groupId>
-	<artifactId>jetty-deps-x</artifactId>
+	<artifactId>jetty-deps-core</artifactId>
 	<version>8.1.13</version>
 	<packaging>pom</packaging>
+
+	<description>Jetty 8 core jars dependency</description>
+	
+	<url>https://github.com/anthavio/anthavio-maven-poms</url>
+	
+	<scm>
+		<url>https://github.com/anthavio/anthavio-maven-poms</url>
+		<connection>https://github.com/anthavio/anthavio-maven-poms.git</connection>
+		<developerConnection>git@github.com:anthavio/anthavio-maven-poms.git</developerConnection>
+	</scm>
+	
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	
+	<developers>
+		<developer>
+			<id>anthavio</id>
+			<name>Martin Vanek</name>
+		</developer>
+	</developers>
 	
 	<dependencyManagement>
 	

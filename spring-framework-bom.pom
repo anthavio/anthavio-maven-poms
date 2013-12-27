@@ -8,6 +8,7 @@
 	<packaging>pom</packaging>
 	
 	<name>spring-framework-bom</name>
+	
 	<description>Spring Framework Maven BOM</description>
 	
 	<!-- 
@@ -35,25 +36,14 @@
 	<developers>
 		<developer>
 			<id>anthavio</id>
-			<name>Martin Vaněk</name>
-			<email>anthavio@post.cz</email>
-		</developer>
-		<developer>
-			<id>vanek</id>
-			<name>Martin Vaněk</name>
+			<name>Martin Vanek</name>
 			<email>anthavio@post.cz</email>
 		</developer>
 	</developers>
 	
 	<dependencyManagement>
 	<dependencies>
-	
-		<dependency>
-			<groupId>aopalliance</groupId>
-			<artifactId>aopalliance</artifactId>
-			<version>1.0</version>
-		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
@@ -67,7 +57,8 @@
 		</dependency>
 		
 		<!-- 
-			Since Spring 3.2 M2,  asm and cglib are inlined into spring-core
+			spring-asm removed in Spring 3.2 M2
+			cglib and asm libraries become repackaged directly into spring-core
 			http://spring.io/blog/2012/09/12/spring-framework-3-2-m2-released
 		-->
 		<!--
@@ -233,6 +224,8 @@
 			</exclusions>
 		</dependency>
 		
+		<!-- spring-struts removed in Spring 4.0.0 -->
+		
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-struts</artifactId>
@@ -295,7 +288,7 @@
 		
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>spring-web-portlet</artifactId>
+			<artifactId>spring-webmvc-portlet</artifactId>
 			<version>${project.version}</version>
 			<exclusions>
 				<exclusion>

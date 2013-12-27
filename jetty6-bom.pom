@@ -12,7 +12,8 @@
 	</properties>
 	
 	<name>jetty-bom</name>
-	<description>Jetty Maven BOM</description>
+	
+	<description>Jetty 6 Maven BOM</description>
 	
 	<url>https://github.com/anthavio/anthavio-maven-poms</url>
 	<scm>
@@ -32,12 +33,7 @@
 	<developers>
 		<developer>
 			<id>anthavio</id>
-			<name>Martin Vaněk</name>
-			<email>anthavio@post.cz</email>
-		</developer>
-		<developer>
-			<id>vanek</id>
-			<name>Martin Vaněk</name>
+			<name>Martin Vanek</name>
 			<email>anthavio@post.cz</email>
 		</developer>
 	</developers>
@@ -97,6 +93,18 @@
 			<version>${jetty.version}</version>
 		</dependency>
 		
+		<dependency>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>jetty-management</artifactId>
+			<version>${jetty.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>jetty-html</artifactId>
+			<version>${jetty.version}</version>
+		</dependency>
+
 	</dependencies>
 	</dependencyManagement>
 	
