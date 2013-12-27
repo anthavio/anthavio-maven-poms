@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>net.anthavio.maven</groupId>
-	<artifactId>jetty-deps-core</artifactId>
+	<artifactId>jetty-essentials</artifactId>
 	<version>8.1.13</version>
 	<packaging>pom</packaging>
 
-	<description>Jetty 8 core jars dependency</description>
+	<description>Jetty 8 essential jars</description>
 	
 	<url>https://github.com/anthavio/anthavio-maven-poms</url>
 	

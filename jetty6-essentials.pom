@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>net.anthavio.maven</groupId>
-	<artifactId>jetty-deps-core</artifactId>
+	<artifactId>jetty-essentials</artifactId>
 	<version>6.1.26</version>
 	<packaging>pom</packaging>
 	
-	<description>Jetty 6 core jars dependency</description>
+	<description>Jetty 6 essential jars</description>
 	
 	<url>https://github.com/anthavio/anthavio-maven-poms</url>
 	
