@@ -6,6 +6,8 @@
 	<artifactId>jetty-essentials</artifactId>
 	<version>8.1.13</version>
 	<packaging>pom</packaging>
+	
+	<name>jetty-essentials</name>
 
 	<description>Jetty 8 essential jars</description>
 	

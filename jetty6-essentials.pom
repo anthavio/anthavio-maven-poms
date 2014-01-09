@@ -7,6 +7,8 @@
 	<version>6.1.26</version>
 	<packaging>pom</packaging>
 	
+	<name>jetty-essentials</name>
+	
 	<description>Jetty 6 essential jars</description>
 	
 	<url>https://github.com/anthavio/anthavio-maven-poms</url>
