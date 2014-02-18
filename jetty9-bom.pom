@@ -109,18 +109,22 @@
 			<version>${jetty.version}</version>
 		</dependency>
 		
+		<!-- subproject jetty-spdy -->
+		<!--
 		<dependency>
-			<groupId>org.eclipse.jetty</groupId>
-			<artifactId>jetty-spdy</artifactId>
+			<groupId>org.eclipse.jetty.spdy</groupId>
+			<artifactId>subproject</artifactId>
 			<version>${jetty.version}</version>
 		</dependency>
-		
+		-->
+		<!-- subproject jetty-websocket -->
+		<!--
 		<dependency>
-			<groupId>org.eclipse.jetty</groupId>
-			<artifactId>jetty-websocket</artifactId>
+			<groupId>org.eclipse.jetty.websocket</groupId>
+			<artifactId>websocket-parent</artifactId>
 			<version>${jetty.version}</version>
 		</dependency>
-		
+		-->
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-servlets</artifactId>
@@ -211,11 +215,14 @@
 			<version>${jetty.version}</version>
 		</dependency>
 		
+		<!-- subproject jetty-osgi -->
+		<!-- 
 		<dependency>
-			<groupId>org.eclipse.jetty</groupId>
-			<artifactId>jetty-osgi</artifactId>
+			<groupId>org.eclipse.jetty.osgi</groupId>
+			<artifactId>jetty-osgi-project</artifactId>
 			<version>${jetty.version}</version>
 		</dependency>
+		-->
 		
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
