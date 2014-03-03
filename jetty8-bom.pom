@@ -4,11 +4,11 @@
 	
 	<groupId>net.anthavio.maven</groupId>
 	<artifactId>jetty-bom</artifactId>
-	<version>8.1.13</version>
+	<version>8.1.14</version>
 	<packaging>pom</packaging>
 	
 	<properties>
-		<jetty.version>8.1.13.v20130916</jetty.version>
+		<jetty.version>8.1.14.v20131031</jetty.version>
 	</properties>
 	
 	<name>jetty-bom</name>
