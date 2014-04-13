@@ -7,10 +7,14 @@
 REPO_OPTS="-Durl=https://oss.sonatype.org/service/local/staging/deploy/maven2 -DrepositoryId=sonatype-oss-staging"
 
 doDeploy() {
+	
 	#mvn deploy:deploy-file -Dfile=$1 -DpomFile=$1 $REPO_OPTS
-	mvn gpg:sign-and-deploy-file -Dfile=$1 -DpomFile=$1 $REPO_OPTS
-    # gpg deploy do not install into local repo...
-    mvn install -f $1
+	#gpg -ab $1
+	#mvn deploy:deploy-file -Dpackaging=asc -Dfile=$1.asc -DpomFile=$1 $REPO_OPTS
+	# fails sometimes on no-tty
+	mvn gpg:sign-and-deploy-file -Dfile=$1 -DpomFile=$1 $REPO_OPTS -Dgpg.useagent=false
+	# gpg deploy do not install into local repo...
+	mvn install -f $1
 }
 
 if [ "$1" != "" ]; then
