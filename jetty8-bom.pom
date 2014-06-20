@@ -41,7 +41,7 @@
 	<dependencyManagement>
 	<dependencies>
 	
-	<!-- All modules from - jetty-parent:jetty-project:{version}:pom -->
+	<!-- All modules from - http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-project/8.1.15.v20140411/jetty-project-8.1.15.v20140411.pom -->
 		
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
@@ -67,9 +67,17 @@
 			<version>${jetty.version}</version>
 		</dependency>
 		
+		<!-- Jetty 8.x websocket -->
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-websocket</artifactId>
+			<version>${jetty.version}</version>
+		</dependency>
+		
+		<!-- Jetty 8.x spdy -->
+		<dependency>
+			<groupId>org.eclipse.jetty.spdy</groupId>
+			<artifactId>spdy-jetty-http</artifactId>
 			<version>${jetty.version}</version>
 		</dependency>
 		
@@ -192,12 +200,14 @@
 			<artifactId>jetty-overlay-deployer</artifactId>
 			<version>${jetty.version}</version>
 		</dependency>
-
+		
+		<!-- jetty-osgi is subproject
 		<dependency>
-			<groupId>org.eclipse.jetty</groupId>
-			<artifactId>jetty-osgi</artifactId>
+			<groupId>org.eclipse.jetty.osgi</groupId>
+			<artifactId>jetty-osgi-project</artifactId>
 			<version>${jetty.version}</version>
 		</dependency>
+		-->
 		
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
