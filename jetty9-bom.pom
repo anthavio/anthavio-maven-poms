@@ -4,11 +4,11 @@
 	
 	<groupId>net.anthavio.maven</groupId>
 	<artifactId>jetty-bom</artifactId>
-	<version>9.1.5</version>
+	<version>9.2.1</version>
 	<packaging>pom</packaging>
 	
 	<properties>
-		<jetty.version>9.1.5.v20140505</jetty.version>
+		<jetty.version>9.2.1.v20140609</jetty.version>
 	</properties>
 	
 	<name>jetty-bom</name>
@@ -109,22 +109,27 @@
 			<version>${jetty.version}</version>
 		</dependency>
 		
-		<!-- subproject jetty-spdy -->
-		<!--
-		<dependency>
-			<groupId>org.eclipse.jetty.spdy</groupId>
-			<artifactId>subproject</artifactId>
-			<version>${jetty.version}</version>
-		</dependency>
-		-->
-		<!-- subproject jetty-websocket -->
-		<!--
+		<!-- Jetty 9.x http://repo1.maven.org/maven2/org/eclipse/jetty/websocket/ -->
 		<dependency>
 			<groupId>org.eclipse.jetty.websocket</groupId>
-			<artifactId>websocket-parent</artifactId>
+			<artifactId>websocket-server</artifactId>
 			<version>${jetty.version}</version>
 		</dependency>
-		-->
+		
+		<!-- Jetty 9.x http://repo1.maven.org/maven2/org/eclipse/jetty/spdy/ -->
+		<dependency>
+			<groupId>org.eclipse.jetty.spdy</groupId>
+			<artifactId>spdy-http-server</artifactId>
+			<version>${jetty.version}</version>
+		</dependency>
+
+		<!-- Jetty 9.x http://repo1.maven.org/maven2/org/eclipse/jetty/fcgi/ -->
+		<dependency>
+			<groupId>org.eclipse.jetty.fcgi</groupId>
+			<artifactId>fcgi-server</artifactId>
+			<version>${jetty.version}</version>
+		</dependency>
+		
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-servlets</artifactId>
@@ -134,6 +139,26 @@
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-util-ajax</artifactId>
+			<version>${jetty.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-jsp</artifactId>
+			<version>${jetty.version}</version>
+		</dependency>
+		
+		<!-- 9.2.x -->
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>apache-jsp</artifactId>
+			<version>${jetty.version}</version>
+		</dependency>
+		
+		<!-- 9.2.x -->
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>apache-jstl</artifactId>
 			<version>${jetty.version}</version>
 		</dependency>
 		
@@ -181,12 +206,6 @@
 		
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
-			<artifactId>jetty-jsp</artifactId>
-			<version>${jetty.version}</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-jaas</artifactId>
 			<version>${jetty.version}</version>
 		</dependency>
@@ -215,8 +234,7 @@
 			<version>${jetty.version}</version>
 		</dependency>
 		
-		<!-- subproject jetty-osgi -->
-		<!-- 
+		<!-- jetty-osgi is subproject
 		<dependency>
 			<groupId>org.eclipse.jetty.osgi</groupId>
 			<artifactId>jetty-osgi-project</artifactId>
@@ -254,7 +272,22 @@
 			<artifactId>jetty-http-spi</artifactId>
 			<version>${jetty.version}</version>
 		</dependency>
-<!--
+		
+		<!-- 9.2.x jetty-alpn module is subproject - http://repo1.maven.org/maven2/org/eclipse/jetty -->
+		
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-alpn-server</artifactId>
+			<version>${jetty.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-alpn-client</artifactId>
+			<version>${jetty.version}</version>
+		</dependency>
+		
+<!-- dropped or unmaintained modules
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-overlay-deployer</artifactId>
