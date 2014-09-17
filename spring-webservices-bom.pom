@@ -4,9 +4,12 @@
 	
 	<groupId>net.anthavio.maven</groupId>
 	<artifactId>spring-ws-bom</artifactId>
-	<version>2.2.0.RELEASE</version>
+	<version>2.1.0.RELEASE</version>
 	<packaging>pom</packaging>
 
+	<name>spring-ws-bom</name>
+	
+	<description>Spring Web Services Maven BOM</description>
 
 	<url>https://github.com/anthavio/anthavio-maven-poms</url>
 	<scm>
