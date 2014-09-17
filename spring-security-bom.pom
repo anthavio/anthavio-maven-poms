@@ -4,10 +4,11 @@
 	
 	<groupId>net.anthavio.maven</groupId>
 	<artifactId>spring-security-bom</artifactId>
-	<version>3.2.4.RELEASE</version>
+	<version>3.2.5.RELEASE</version>
 	<packaging>pom</packaging>
 	
 	<name>spring-security-bom</name>
+	
 	<description>Spring Security Maven BOM</description>
 	
 	<!-- 
@@ -25,8 +26,8 @@
 	
 	<licenses>
 		<license>
-			<name>GNU Lesser General Public License v3.0</name>
-			<url>http://www.gnu.org/licenses/lgpl-3.0.txt</url>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>

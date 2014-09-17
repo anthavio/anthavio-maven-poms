@@ -4,7 +4,7 @@
 	
 	<groupId>net.anthavio.maven</groupId>
 	<artifactId>spring-framework-bom</artifactId>
-	<version>4.0.5.RELEASE</version>
+	<version>4.0.7.RELEASE</version>
 	<packaging>pom</packaging>
 	
 	<name>spring-framework-bom</name>
@@ -26,11 +26,11 @@
 		<developerConnection>scm:git:git@github.com:anthavio/anthavio-maven-poms.git</developerConnection>
 		<url>https://github.com/anthavio/anthavio-maven-poms</url>
 	</scm>
-	
+
 	<licenses>
 		<license>
-			<name>GNU Lesser General Public License v3.0</name>
-			<url>http://www.gnu.org/licenses/lgpl-3.0.txt</url>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
