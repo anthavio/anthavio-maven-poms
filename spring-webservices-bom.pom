@@ -22,6 +22,14 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+	
+	<developers>
+		<developer>
+			<id>anthavio</id>
+			<name>Martin Vanek</name>
+			<email>anthavio@post.cz</email>
+		</developer>
+	</developers>
 
 	<dependencyManagement>
 	<dependencies>
