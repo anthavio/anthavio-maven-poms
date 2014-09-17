@@ -4,7 +4,7 @@
 	
 	<groupId>net.anthavio.maven</groupId>
 	<artifactId>spring-framework-bom</artifactId>
-	<version>4.0.7.RELEASE</version>
+	<version>4.1.0.RELEASE</version>
 	<packaging>pom</packaging>
 	
 	<name>spring-framework-bom</name>
@@ -15,6 +15,7 @@
 		Starting with Spring 4.0.0, official BOM is FINALY provided
 		http://docs.spring.io/spring/docs/4.0.0.RELEASE/spring-framework-reference/htmlsingle/#overview-maven-bom
 		http://repo1.maven.org/maven2/org/springframework/spring-framework-bom/4.0.0.RELEASE/spring-framework-bom-4.0.0.RELEASE.pom
+		http://repo1.maven.org/maven2/org/springframework/spring-framework-bom/4.1.0.RELEASE/spring-framework-bom-4.1.0.RELEASE.pom
 		
 		But using it, still have to exclude commons-logging, if you want to use slf4j
 		http://docs.spring.io/spring/docs/4.0.0.RELEASE/spring-framework-reference/htmlsingle/#overview-not-using-commons-logging
